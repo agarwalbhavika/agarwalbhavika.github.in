@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pes University</title>
+</head>
+<body>
+
+<h1>Design work</h1>
+<p>Project 2</p>
+<img src="Lighthouse.jpg">
+
+
+</body>
+</html>
