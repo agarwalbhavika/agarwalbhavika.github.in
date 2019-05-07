@@ -6,170 +6,204 @@ body {
   padding: 0px;
 }
 
+@font-face {
+src: url(fonts/MyriadPro-BoldIt_0.otf);
+font-family: macchi;
+}
+@font-face {
+src: url(fonts/MinionPro-Medium_0.otf);
+font-family: maccha;
+}
 .grid {
   display: grid;
-  grid-template-columns:30px 2fr 2fr 80px 1fr 1fr 30px;
-  grid-template-rows: auto auto auto auto auto 70px;
+  grid-template-columns: 60px 1fr 1fr 1fr 30px;
+  grid-template-rows: 40px auto auto auto ;
   color: black;
   //grid-auto-rows: auto;
-  //grid-gap: 10px;
+  grid-gap: 0px;
   grid-template-areas:
-  " one one one one two two two "
-  " three four four four fourteen fourteen five "
-  " six six six fifteen seven seven seven "
-  " six six six fifteen seven seven seven "
-  " six six six fifteen seven seven seven "
-  " eight nine ten eleven eleven twelve thirteen ";
+  " one two three four four "
+  " five five six six six  "
+  " seven eight nine ten eleven "
+  "seven twelve thirteen fourteen eleven";
+
 }
 
-.grid div:nth-child(odd) {
-  //background-color: green;
-}
 
-.grid div:nth-child(even) {
-  //background-color: #333;
-}
 
  .one {
    grid-area: one;
-   //background-color: #D3DFD1;
+   background-color: white;;
    //justify-self: center ;
-   border-bottom: 20px solid black;
-   border-left: 2px solid transparent;
-   border-right: 0px solid transparent;
-   height: 0;
-   transform: rotate(180deg);
- }
- .one > p1{
 
-   font-size: 500%;
-   padding: 20px;
-   font-family: cursive;
-   text-align: justify ;
  }
- .one > h1{
-   padding: 20px;
- }
+
 
  .two {
   grid-area: two;
-background-color: white;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20%;
+  background-color: white;
 
  }
  .two > img {
   object-fit: cover;
   width: 100%;
+  background-color: white;
 //  max-height: 100%;
 }
 
+
 .three {
   grid-area: three;
-  background-color: black;
+  background-color: white;
+  vertical-align: text-bottom;
 }
-.three > h1{
-  font-size: 200%;
+.three > p1{
+  font-size: 100%;
   padding: 10px;
-  font-family: cursive;
-  text-align: justify ;
+  font-size: 130%;
+  vertical-align: bottom;
+  font-family: maccha;
+
+}
+.three > p2{
+background-color: pink;
+
+  font-size: 100%;
+  padding: 15px;
+  font-size: 130%;
+  vertical-align: bottom;
+  font-family: maccha;
+
+}
+.three > p2:hover
+{
+  background-color: blue;
+color: white;
+    font-size: 100%;
+    padding: 15px;
+    font-size: 130%;
+    vertical-align: bottom;
+    font-family: maccha;
 }
 .four {
   grid-area: four;
-  background-color: yellow;
+  background-color: white;
 }
-.fourteen {
-  grid-area: fourteen;
-  background-color: black;
-}
-
 .five {
   grid-area: five;
   //justify-self: center ;
-  background-color: white;
+  background-color: #e6e6e6;
+  padding: 7%;
+
 }
 
+.six > h1{
+  font-size: 300%;
+  padding: 10px;
+  font-family: macchi;
+   vertical-align: middle;
+  text-align: center ;
+}
 .six {
+  background-color: #e6e6e6;
   grid-area: six;
   //justify-self: center ;
-	width: 960px;
-	height: 650px;
-  background: black;
-}
-
-.six > p1 {
-  color: white;
-  padding : 30px;
-  font-size : 60px;
-}
-.six > p2 {
-  color: white;
-  padding : 30px;
-}
-.six > p3 {
-  color: white;
-  padding : 30px;
-}
-.six > img {
-  padding : 30px;
-}
-
-.fifteen {
-  grid-area: fifteen;
-  justify-self: center ;
-  width: 0;
-	height: 0;
-	border-left: 0px solid transparent;
-	border-right: 60px solid transparent;
-	border-top: 650px solid black;
+  padding: 7%;
 }
 .seven {
   grid-area: seven;
-  justify-self: center ;
-
+  background-color: #843894;
 }
 .eight {
   grid-area: eight;
-  //justify-self: center ;
-  background-color: yellow;
+
+  background-color: #843894;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.eight >img:hover
+{
+width: 95%;
+height: 85%;
+}
+{
+  width: 100%;
+  height: 100%;
 }
 .nine {
   grid-area: nine;
   //justify-self: center ;
-  background-color: yellow;
+  background-color: #843894;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px;
 }
-.nine:hover {
-  grid-area: nine;
-  color: blue;
+.nine >img:hover
+{
+width: 95%;
+height: 85%;
 }
-
 .ten {
   grid-area: ten;
   //justify-self: center ;
-  background-color: yellow;
+  background-color: #843894;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px;
 }
-.ten:hover {
-  grid-area: ten;
-  color: blue;
+.ten >img:hover
+{
+width: 95%;
+height: 85%;
 }
 .eleven {
   grid-area: eleven;
   //justify-self: center ;
-  background-color: yellow;
-}
-.eleven:hover {
-  grid-area: eleven;
-  color: blue;
+  background-color: #843894;
+
 }
 .twelve {
   grid-area: twelve;
   //justify-self: center ;
-  background-color: yellow;
+  background-color: #843894;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px;
 }
-.twelve:hover {
-  grid-area: twelve;
-  color: blue;
+.twelve >img:hover
+{
+width: 95%;
+height: 85%;
 }
 .thirteen {
   grid-area: thirteen;
   //justify-self: center ;
-  background-color: yellow;
+  background-color: #843894;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.thirteen >img:hover
+{
+width: 95%;
+height: 85%;
+}
+.fourteen {
+  grid-area: fourteen;
+  //justify-self: center ;
+  background-color: #843894;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+.fourteen >img:hover
+{
+width: 95%;
+height: 85%;
 }
