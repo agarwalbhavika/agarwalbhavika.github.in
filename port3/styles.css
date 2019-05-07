@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 1fr 30px;
+  grid-template-rows: 20px auto auto auto auto auto;
+  color: black;
+  //grid-auto-rows: auto;
+  grid-gap: 0px;
+  grid-template-areas:
+  " one one one one one "
+  " two three three three four  "
+  " two five six seven four "
+  "two eight nine ten four"
+  "two eleven twelve thirteen four"
+  "two fourteen fifteen sixteen four";
+
+}
+
+.grid div:nth-child(odd) {
+  //background-color: green;
+}
+
+.grid div:nth-child(even) {
+  //background-color: #333;
+}
+
+ .one {
+   grid-area: one;
+   //background-color: #D3DFD1;
+   //justify-self: center ;
+ }
+ .one > p1{
+   font-size: 500%;
+   padding: 20px;
+   font-family: cursive;
+   text-align: justify ;
+ }
+ .one > h1{
+   //padding: 20px;
+ }
+
+ .two {
+  grid-area: two;
+  //background-image: url("image.jpg");
+  //background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+ }
+ .two > img {
+  object-fit: cover;
+//  width: 100%;
+//  max-height: 100%;
+}
+
+.three {
+  grid-area: three;
+  background-color: yellow;
+}
+.three > h1{
+  padding: 10px;
+  font-family: verdana;
+  text-align: justify ;
+}
+.four {
+  grid-area: four;
+  //background-color: #CFCAC6;
+}
+.five {
+  grid-area: five;
+  justify-self: center ;
+  padding-top: 20px;
+  //background-color: #333;
+}
+
+.six {
+  grid-area: six;
+  padding-top: 20px;
+  justify-self: center ;
+}
+
+.seven {
+  grid-area: seven;
+  padding-top: 20px;
+  justify-self: center ;
+}
+
+.eight {
+  grid-area: eight;
+  padding-left: 130px;
+  //justify-self: center ;
+}
+
+.nine {
+  grid-area: nine;
+  padding-left: 130px;
+  padding-top: 50px;
+  //justify-self: center ;
+}
+
+.ten {
+  grid-area: ten;
+  padding-left: 130px;
+  padding-top: 50px;
+  //justify-self: center ;
+}
+
+.eleven {
+  grid-area: eleven;
+  padding-top: 20px;
+  justify-self: center ;
+}
+
+.twelve {
+  grid-area: twelve;
+  padding-left: 140px;
+  padding-top: 20px;
+  //justify-self: left ;
+}
+
+.thirteen {
+  grid-area: thirteen;
+  padding-top: 20px;
+  justify-self: center ;
+}
+
+.fourteen {
+  grid-area: fourteen;
+  padding-left: 130px;
+  //align: middle;
+  //justify-self: center ;
+}
+
+.fifteen {
+  grid-area: fifteen;
+  padding-left: 130px;
+  //justify-self: center ;
+}
+
+.sixteen {
+  grid-area: sixteen;
+  padding-left: 130px;
+  //justify-self: center ;
+}

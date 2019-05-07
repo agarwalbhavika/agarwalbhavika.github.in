@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns:30px 2fr 2fr 80px 1fr 1fr 30px;
+  grid-template-rows: auto auto auto auto auto 70px;
+  color: black;
+  //grid-auto-rows: auto;
+  //grid-gap: 10px;
+  grid-template-areas:
+  " one one one one two two two "
+  " three four four four fourteen fourteen five "
+  " six six six fifteen seven seven seven "
+  " six six six fifteen seven seven seven "
+  " six six six fifteen seven seven seven "
+  " eight nine ten eleven eleven twelve thirteen ";
+}
+
+.grid div:nth-child(odd) {
+  //background-color: green;
+}
+
+.grid div:nth-child(even) {
+  //background-color: #333;
+}
+
+ .one {
+   grid-area: one;
+   //background-color: #D3DFD1;
+   //justify-self: center ;
+   border-bottom: 20px solid black;
+   border-left: 2px solid transparent;
+   border-right: 0px solid transparent;
+   height: 0;
+   transform: rotate(180deg);
+ }
+ .one > p1{
+
+   font-size: 500%;
+   padding: 20px;
+   font-family: cursive;
+   text-align: justify ;
+ }
+ .one > p3{
+
+   font-size: 500%;
+   padding: 20px;
+   color: black;
+   font-family: cursive;
+   text-align: justify ;
+ }
+ .one > h1{
+   padding: 20px;
+ }
+
+ .two {
+  grid-area: two;
+background-color: white;
+
+ }
+ .two > img {
+  object-fit: cover;
+  width: 100%;
+//  max-height: 100%;
+}
+
+.three {
+  grid-area: three;
+  background-color: black;
+}
+.three > h1{
+  font-size: 200%;
+  padding: 10px;
+  font-family: cursive;
+  text-align: justify ;
+}
+.four {
+  grid-area: four;
+  background-color: yellow;
+}
+.fourteen {
+  grid-area: fourteen;
+  background-color: black;
+}
+
+.five {
+  grid-area: five;
+  //justify-self: center ;
+  background-color: white;
+}
+
+.six {
+  grid-area: six;
+  //justify-self: center ;
+	width: 960px;
+	height: 650px;
+  background: black;
+}
+
+.six > p1 {
+  font-family: helvetica;
+  color: white;
+  padding : 30px;
+  font-size : 60px;
+}
+.six > p2 {
+  font-family: verdana;
+  color: white;
+  padding : 30px;
+  font-size : 30px;
+}
+.six > p3 {
+  font-family: verdana;
+  color: white;
+  font-size : 20px;
+  padding : 30px;
+}
+.six > img {
+  padding : 30px;
+}
+
+.fifteen {
+  grid-area: fifteen;
+  justify-self: center ;
+  width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 650px solid black;
+}
+.seven {
+  grid-area: seven;
+  justify-self: center ;
+
+}
+.eight {
+  grid-area: eight;
+  //justify-self: center ;
+  background-color: yellow;
+}
+.nine {
+  grid-area: nine;
+  font-family: times;
+  //justify-self: center ;
+  background-color: yellow;
+}
+.nine:hover {
+  grid-area: nine;
+  color: blue;
+}
+
+.ten {
+  grid-area: ten;
+  font-family: times;
+  color: black;
+  font-size : 20px;
+  //justify-self: center ;
+  background-color: yellow;
+}
+.ten:hover {
+  grid-area: ten;
+  color: blue;
+}
+.eleven {
+  font-family: times;
+  grid-area: eleven;
+  //justify-self: center ;
+  background-color: yellow;
+}
+.eleven:hover {
+  grid-area: eleven;
+  color: blue;
+}
+.twelve {
+  grid-area: twelve;
+  font-family: times;
+  //justify-self: center ;
+  background-color: yellow;
+}
+.twelve:hover {
+  grid-area: twelve;
+  color: blue;
+}
+.thirteen {
+  grid-area: thirteen;
+  //justify-self: center ;
+  background-color: yellow;
+}
